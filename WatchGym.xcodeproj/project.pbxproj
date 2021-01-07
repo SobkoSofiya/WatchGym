@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,10 @@
 		C364490A25A3293A007AF157 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364490925A3293A007AF157 /* ComplicationController.swift */; };
 		C364490C25A3293B007AF157 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C364490B25A3293B007AF157 /* Assets.xcassets */; };
 		C364490F25A3293B007AF157 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C364490E25A3293B007AF157 /* Preview Assets.xcassets */; };
+		C364496525A32A09007AF157 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364496425A32A09007AF157 /* SignInView.swift */; };
+		C3644A1725A35083007AF157 /* SignOut View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3644A1625A35083007AF157 /* SignOut View.swift */; };
+		C3644A1C25A350B6007AF157 /* Swift2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3644A1B25A350B6007AF157 /* Swift2.swift */; };
+		C3644A2425A35140007AF157 /* GymMOdel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3644A2325A35140007AF157 /* GymMOdel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +84,10 @@
 		C364490E25A3293B007AF157 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C364491025A3293B007AF157 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C364491125A3293B007AF157 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		C364496425A32A09007AF157 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		C3644A1625A35083007AF157 /* SignOut View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignOut View.swift"; sourceTree = "<group>"; };
+		C3644A1B25A350B6007AF157 /* Swift2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift2.swift; sourceTree = "<group>"; };
+		C3644A2325A35140007AF157 /* GymMOdel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymMOdel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +135,10 @@
 			children = (
 				C36448FF25A3293A007AF157 /* HostingController.swift */,
 				C364490125A3293A007AF157 /* ContentView.swift */,
+				C3644A1B25A350B6007AF157 /* Swift2.swift */,
+				C3644A2325A35140007AF157 /* GymMOdel.swift */,
+				C364496425A32A09007AF157 /* SignInView.swift */,
+				C3644A1625A35083007AF157 /* SignOut View.swift */,
 				C364490325A3293A007AF157 /* ExtensionDelegate.swift */,
 				C364490525A3293A007AF157 /* NotificationController.swift */,
 				C364490725A3293A007AF157 /* NotificationView.swift */,
@@ -163,6 +175,10 @@
 				C36448EE25A32938007AF157 /* PBXTargetDependency */,
 			);
 			name = WatchGym;
+			packageProductDependencies = (
+				C36449B425A32EF8007AF157 /* SwiftyJSON */,
+				C3644A1225A34CA7007AF157 /* Alamofire */,
+			);
 			productName = WatchGym;
 			productReference = C36448E725A32938007AF157 /* WatchGym.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
@@ -230,6 +246,10 @@
 				Base,
 			);
 			mainGroup = C36448E025A32938007AF157;
+			packageReferences = (
+				C36449B325A32EF8007AF157 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				C3644A1125A34CA7007AF157 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = C36448E825A32938007AF157 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -275,11 +295,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C364490225A3293A007AF157 /* ContentView.swift in Sources */,
+				C3644A1725A35083007AF157 /* SignOut View.swift in Sources */,
+				C364496525A32A09007AF157 /* SignInView.swift in Sources */,
+				C3644A1C25A350B6007AF157 /* Swift2.swift in Sources */,
 				C364490025A3293A007AF157 /* HostingController.swift in Sources */,
 				C364490625A3293A007AF157 /* NotificationController.swift in Sources */,
 				C364490425A3293A007AF157 /* ExtensionDelegate.swift in Sources */,
 				C364490825A3293A007AF157 /* NotificationView.swift in Sources */,
 				C364490A25A3293A007AF157 /* ComplicationController.swift in Sources */,
+				C3644A2425A35140007AF157 /* GymMOdel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,6 +596,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C36449B325A32EF8007AF157 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		C3644A1125A34CA7007AF157 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C36449B425A32EF8007AF157 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C36449B325A32EF8007AF157 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		C3644A1225A34CA7007AF157 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3644A1125A34CA7007AF157 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C36448E125A32938007AF157 /* Project object */;
 }
