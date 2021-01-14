@@ -8,6 +8,8 @@
 import Foundation
 import SwiftUI
 
+
+
 struct GymModel:Hashable {
-    let username, password:String
+    let pass1, email1, user1:String
 }

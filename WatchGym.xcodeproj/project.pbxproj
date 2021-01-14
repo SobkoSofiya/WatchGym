@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C32FA0F625AD7581007560CE /* GymViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32FA0F525AD7581007560CE /* GymViewModel.swift */; };
+		C32FA0FE25AD7A4B007560CE /* DetailGymViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32FA0FD25AD7A4B007560CE /* DetailGymViewModel.swift */; };
 		C36448EC25A32938007AF157 /* WatchGym WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C36448EB25A32938007AF157 /* WatchGym WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C36448F225A32938007AF157 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C36448F025A32938007AF157 /* Interface.storyboard */; };
 		C36448F425A3293A007AF157 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C36448F325A3293A007AF157 /* Assets.xcassets */; };
@@ -20,9 +22,12 @@
 		C364490C25A3293B007AF157 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C364490B25A3293B007AF157 /* Assets.xcassets */; };
 		C364490F25A3293B007AF157 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C364490E25A3293B007AF157 /* Preview Assets.xcassets */; };
 		C364496525A32A09007AF157 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364496425A32A09007AF157 /* SignInView.swift */; };
-		C3644A1725A35083007AF157 /* SignOut View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3644A1625A35083007AF157 /* SignOut View.swift */; };
 		C3644A1C25A350B6007AF157 /* Swift2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3644A1B25A350B6007AF157 /* Swift2.swift */; };
 		C3644A2425A35140007AF157 /* GymMOdel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3644A2325A35140007AF157 /* GymMOdel.swift */; };
+		C37172BF25B0744500AA5CA5 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = C37172BE25B0744500AA5CA5 /* SwiftyJSON */; };
+		C37172C825B074DF00AA5CA5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C37172C725B074DF00AA5CA5 /* Alamofire */; };
+		C37172CD25B074FF00AA5CA5 /* ModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37172CC25B074FF00AA5CA5 /* ModelView.swift */; };
+		C37172D225B075A500AA5CA5 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37172D125B075A500AA5CA5 /* SignUp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +73,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C32FA0F525AD7581007560CE /* GymViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymViewModel.swift; sourceTree = "<group>"; };
+		C32FA0FD25AD7A4B007560CE /* DetailGymViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGymViewModel.swift; sourceTree = "<group>"; };
 		C36448E725A32938007AF157 /* WatchGym.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchGym.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C36448EB25A32938007AF157 /* WatchGym WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchGym WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C36448F125A32938007AF157 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -85,9 +92,10 @@
 		C364491025A3293B007AF157 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C364491125A3293B007AF157 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		C364496425A32A09007AF157 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
-		C3644A1625A35083007AF157 /* SignOut View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignOut View.swift"; sourceTree = "<group>"; };
 		C3644A1B25A350B6007AF157 /* Swift2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift2.swift; sourceTree = "<group>"; };
 		C3644A2325A35140007AF157 /* GymMOdel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymMOdel.swift; sourceTree = "<group>"; };
+		C37172CC25B074FF00AA5CA5 /* ModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelView.swift; sourceTree = "<group>"; };
+		C37172D125B075A500AA5CA5 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +103,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C37172BF25B0744500AA5CA5 /* SwiftyJSON in Frameworks */,
+				C37172C825B074DF00AA5CA5 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +117,7 @@
 				C36448EF25A32938007AF157 /* WatchGym WatchKit App */,
 				C36448FE25A3293A007AF157 /* WatchGym WatchKit Extension */,
 				C36448E825A32938007AF157 /* Products */,
+				C37172B225B073BF00AA5CA5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,8 +148,11 @@
 				C364490125A3293A007AF157 /* ContentView.swift */,
 				C3644A1B25A350B6007AF157 /* Swift2.swift */,
 				C3644A2325A35140007AF157 /* GymMOdel.swift */,
+				C37172CC25B074FF00AA5CA5 /* ModelView.swift */,
 				C364496425A32A09007AF157 /* SignInView.swift */,
-				C3644A1625A35083007AF157 /* SignOut View.swift */,
+				C37172D125B075A500AA5CA5 /* SignUp.swift */,
+				C32FA0F525AD7581007560CE /* GymViewModel.swift */,
+				C32FA0FD25AD7A4B007560CE /* DetailGymViewModel.swift */,
 				C364490325A3293A007AF157 /* ExtensionDelegate.swift */,
 				C364490525A3293A007AF157 /* NotificationController.swift */,
 				C364490725A3293A007AF157 /* NotificationView.swift */,
@@ -159,6 +173,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		C37172B225B073BF00AA5CA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -176,8 +197,6 @@
 			);
 			name = WatchGym;
 			packageProductDependencies = (
-				C36449B425A32EF8007AF157 /* SwiftyJSON */,
-				C3644A1225A34CA7007AF157 /* Alamofire */,
 			);
 			productName = WatchGym;
 			productReference = C36448E725A32938007AF157 /* WatchGym.app */;
@@ -213,6 +232,10 @@
 			dependencies = (
 			);
 			name = "WatchGym WatchKit Extension";
+			packageProductDependencies = (
+				C37172BE25B0744500AA5CA5 /* SwiftyJSON */,
+				C37172C725B074DF00AA5CA5 /* Alamofire */,
+			);
 			productName = "WatchGym WatchKit Extension";
 			productReference = C36448FA25A3293A007AF157 /* WatchGym WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
@@ -247,8 +270,8 @@
 			);
 			mainGroup = C36448E025A32938007AF157;
 			packageReferences = (
-				C36449B325A32EF8007AF157 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
-				C3644A1125A34CA7007AF157 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				C37172BD25B0744500AA5CA5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				C37172C625B074DF00AA5CA5 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = C36448E825A32938007AF157 /* Products */;
 			projectDirPath = "";
@@ -295,10 +318,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C364490225A3293A007AF157 /* ContentView.swift in Sources */,
-				C3644A1725A35083007AF157 /* SignOut View.swift in Sources */,
 				C364496525A32A09007AF157 /* SignInView.swift in Sources */,
+				C32FA0FE25AD7A4B007560CE /* DetailGymViewModel.swift in Sources */,
 				C3644A1C25A350B6007AF157 /* Swift2.swift in Sources */,
+				C37172CD25B074FF00AA5CA5 /* ModelView.swift in Sources */,
 				C364490025A3293A007AF157 /* HostingController.swift in Sources */,
+				C37172D225B075A500AA5CA5 /* SignUp.swift in Sources */,
+				C32FA0F625AD7581007560CE /* GymViewModel.swift in Sources */,
 				C364490625A3293A007AF157 /* NotificationController.swift in Sources */,
 				C364490425A3293A007AF157 /* ExtensionDelegate.swift in Sources */,
 				C364490825A3293A007AF157 /* NotificationView.swift in Sources */,
@@ -598,15 +624,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C36449B325A32EF8007AF157 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+		C37172BD25B0744500AA5CA5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 5.0.0;
 			};
 		};
-		C3644A1125A34CA7007AF157 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		C37172C625B074DF00AA5CA5 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -617,14 +643,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C36449B425A32EF8007AF157 /* SwiftyJSON */ = {
+		C37172BE25B0744500AA5CA5 /* SwiftyJSON */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C36449B325A32EF8007AF157 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			package = C37172BD25B0744500AA5CA5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
 		};
-		C3644A1225A34CA7007AF157 /* Alamofire */ = {
+		C37172C725B074DF00AA5CA5 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C3644A1125A34CA7007AF157 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = C37172C625B074DF00AA5CA5 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
